@@ -40,8 +40,7 @@ Description: Homework 3 - MIS 3371
                 <div class="format">
                     <h3 class="center-header">Patient Registration Form</h3>
                     
-        <div class="form-row">
-            <div class="form-group">
+        <div class="row">
                 <label for="fname">First Name:</label>
                 <input 
                 type="text" 
@@ -55,8 +54,7 @@ Description: Homework 3 - MIS 3371
                 onblur="validateFname()"
                 placeholder="First Name"/>
                 <span class="error" id="fname-error"></span>
-        </div>
-        <div class="form-group">
+
                 <label for="mi">Middle Initial:</label>
                 <input 
                 type="text" 
@@ -69,8 +67,7 @@ Description: Homework 3 - MIS 3371
                 required 
                 placeholder="Middle Initial"/>
                 <span class="error" id="mi-error"></span>
-        </div>
-        <div class="form-group">
+        
                 <label for="lname">Last Name:</label>
                 <input 
                 type="text" 
@@ -84,20 +81,17 @@ Description: Homework 3 - MIS 3371
                 onblur="validateLname()"
                 placeholder="Last Name"/>
                 <span class="error" id="lname-error"></span>
-        </div>   
+        </div>  
         
-        <tr>
-            <td><label for="gender">Gender:</label></td>
-            <td>
+        <div class="row">
+            <label for="gender">Gender:</label>
                 <input type="radio" id="g1" name="gender" value="Male"> Male
                 <input type="radio" id="g2" name="gender" value="Female"> Female
                 <input type="radio" id="g3" name="gender" value="Other"> Other
-            </td>
-        </tr>
-
-        <tr>
-            <td><label for="dob">Date of Birth:</label></td>
-            <td>
+            
+                </div>
+           <div class="row">  
+            <label for="dob">Date of Birth:</label>
                 <input 
                 type="date" 
                 id="dob" 
@@ -105,12 +99,8 @@ Description: Homework 3 - MIS 3371
                 onblur="validateDob()"
                 required/>
                 <span class="error" id="dob-error"></span>
-            </td>
-        </tr>
-
-        <tr>
-            <td><label for="ssn">Social Security Number:</label></td>
-            <td>
+            
+            <label for="ssn">Social Security Number:</label>
                 <input 
                 type="password" 
                 minlength="9"
@@ -122,12 +112,10 @@ Description: Homework 3 - MIS 3371
                 onblur="validateSsn()"
                 />
                 <span class="error" id="ssn-error"></span>
-            </td>
-        </tr>
+        </div>
 
-        <tr>
-            <td><label for="address1">Address Line 1:</label></td>
-            <td>
+        <div class="row">
+            <label for="address1">Address Line 1:</label>
                 <input 
                 type="text" 
                 name="address1" 
@@ -140,10 +128,8 @@ Description: Homework 3 - MIS 3371
                 onblur="validateAddress1()"
                 />
                 <span class="error" id="address1-error"></span>
-            </td>
 
-            <td><label for="address2">Address Line 2:</label></td>
-            <td>
+            <label for="address2">Address Line 2:</label>
                 <input 
                 type="text" 
                 name="address2" 
@@ -153,11 +139,10 @@ Description: Homework 3 - MIS 3371
                 title="Address Line 2 is optional" 
                 placeholder="Address Line 2"
                 />
-            </td>
+        </div>
 
-            <tr>
-                <td><label for="zipc">Zip Code:</label></td>
-                <td>
+        <div class="row">
+                <label for="zipc">Zip Code:</label>
                     <input 
                     type="text" 
                     name="zipc" 
@@ -171,11 +156,8 @@ Description: Homework 3 - MIS 3371
                     onblur="validateZipc()"
                     />
                     <span class="error" id="zipc-error"></span>
-                </td>
-            </tr>
-
-            <td><label for="city">City:</label></td>
-            <td>
+    
+            <label for="city">City:</label>
                 <input 
                 type="text" 
                 name="city" 
@@ -184,12 +166,9 @@ Description: Homework 3 - MIS 3371
                 required 
                 placeholder="City"
                 />
-            </td>
-        </tr>
-
-        <tr>
-            <td><label for="state">State:</label></td>
-            <td>
+            <br>
+<br>
+        <label for="state">State:</label>
                 <select name="state" id="state" required>
                     <option selected disabled>Select One</option>
                     <option value="AL">Alabama</option>
@@ -244,13 +223,11 @@ Description: Homework 3 - MIS 3371
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                </select>
-            </td>
-        </tr>
+                </select><br>
+            </div>
 
-        <tr>
-            <td><label for="email">Email:</label></td>
-            <td>
+        <div class="row">
+            <label for="email">Email:</label>
                 <input 
                 type="text" 
                 name="email" 
@@ -261,12 +238,8 @@ Description: Homework 3 - MIS 3371
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,20}$"
                 onblur="validateEmail()"
                 />
-            </td>
-        </tr>
-
-        <tr>
-            <td><label for="phone">Phone Number:</label></td>
-            <td>
+           
+            <label for="phone">Phone Number:</label>
                 <input 
                 type="text" 
                 name="phone" 
@@ -277,31 +250,31 @@ Description: Homework 3 - MIS 3371
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 onblur="validatePhone()"
                 />
-            </td>
-        </tr>
+        </div>
 
-<tr>
-    <td><label for="history">Patient History:</label></td>
-    <td>
+<div class="row">
+    <label for="history">Patient History:</label>
+
         <input type="checkbox" id="opt1" value="Chicken Pox"> Chicken Pox
         <input type="checkbox" id="opt2" value="Diabetes"> Diabetes
         <input type="checkbox" id="opt3" value="Heart Trouble"> Heart Trouble
         <input type="checkbox" id="opt4" value="Pneumonia"> Pneumonia
         <input type="checkbox" id="opt5" value="Lung Disease"> Lung Disease
         <input type="checkbox" id="opt6" value="Other"> Other
-    </td>
-</tr>
+</div>
 
-<tr>
-    <td><label for="others">If other was selected, please describe additional medical history:</label></td>
-    <td>
-        <textarea id="others" name="others" rows="4" cols="35" placeholder="Enter text here..."></textarea>
-    </td>
-</tr>
+<div class="row">
 
-<tr>
-    <td class="td1"><label for="range">Please rate your pain.</br>(Rate from 1 to 10)</label></td>
-    <td>
+    <p><label for="dscp">If selected other, please explain any other related medical history:</label></p>
+    
+    <textarea id="dscp" name="dscp" rows="4" cols="50"></textarea><br><br>
+
+</div>
+
+<tr class="form">
+    <td align="right">
+    <label for="range">Please rate your health.</br>(Rate from 1 to 10)</label></td>
+    <td align="center">
         <input
         type="range"
         name="range"
@@ -313,10 +286,11 @@ Description: Homework 3 - MIS 3371
         <span id="range-slider"></span>
     </td>
 </tr>
+<br>
 
-<tr>
-    <td class="td1"><label for="uid">User ID:</label></td>
-    <td>
+<div class="row">
+    <br>
+    <td class="td1"><label for="uid">User ID:</label>
         <input
         type="text"
         name="uid"
@@ -327,9 +301,11 @@ Description: Homework 3 - MIS 3371
         placeholder="Desired User ID"
         />
     </td>
-</tr>
+    <br>
+</div>
 
 <tr>
+    <br>
     <td><label for="pwd">Password:</label></td>
     <td>
         <input 
@@ -361,8 +337,10 @@ Description: Homework 3 - MIS 3371
 </tr>
 
 <tr>
+    <br>
     <td colspan="4">
         <center>
+            <br>
             <input type="submit" name="submit"/>
             <input type="reset" name="reset"/>
             <input type="button" name="review" value="Review" onclick="reviewInput()"/>
