@@ -7,22 +7,68 @@ Description: Homework 3 - MIS 3371
 
 header {
     width: 100%;
-    background-color: cornsilk;
+    background-color: rgb(200, 247, 247);
+    font-family: "optima", sans-serif;
 }
 
-body {
+body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: white;
+    background: #d8f0d8;
     margin: 0;
     height: 100%;
     min-height: 100vh;
 }
 
-form {
-    flex-grow: 1;
+#logo{
+    height: 60px;
 }
+
+.form-container{
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+}
+   
+.row{
+    align-items: center;
+    margin-bottom: 10px;
+}
+        
+    
+.row label{
+    width: 150px;
+    font-weight: bold;
+}
+    
+.row input, .row select{
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+    
+.row input [type="radio"] {
+    flex: 0;
+    margin-right: 5px;
+}
+    
+#footer{
+    text-align: center;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+    
+#review {
+    margin-top: 5px;
+}
+    
 
 h1, h2 {
     text-align: center;
@@ -36,90 +82,6 @@ main {
     font-family:Arial, Helvetica, sans-serif;
     font-weight: normal;
     flex-grow: 1;
-}
-
-.image {
-    text-align: left;
-}
-
-.td1 {
-    text-align: right;
-    font-family: "optima", sans-serif;
-    font-weight: normal;
-}
-
-th {
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-footer {
-    position: center;
-    bottom: 0;
-    width: 100%;
-    background-color: bisque;
-    height: 2.0rem;
-}
-
-#footer {
-    text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: normal;
-}
-
-label {
-    text-align: right;
-    font-family: "optima", sans-serif;
-    font-weight: normal;
-}
-
-input {
-    text-align: left;
-    font-family: "optima", sans-serif;
-    font-weight: normal;
-}
-
-textarea {
-    text-align: left;
-    font-family: "optima", sans-serif;
-    font-weight: normal;
-}
-
-#today {
-    text-align: left;
-    font-family: "optima", sans-serif;
-    font-weight: normal;
-    margin-right: 5px;
-}
-
-p {
-    text-align: right;
-    font-family: "optima", sans-serif;
-    font-weight: normal;
-}
-
-.error {
-    color: red;
-    font-size: 16px;
-    font-family: "optima", sans-serif;
-    font-weight: bold;
-}
-
-.pwd-message {
-    text-align: right;
-    font-family: "optima", sans-serif;
-    font-weight: bold;
-    position: relative;
-    left: 100px;
-    background: transparent;
-    padding: 10px;
-    border-spacing: 2px;
-    border-radius: 20px;
-    color: red;
-}
-
-#review {
-    margin-top: 5px;
 }
 
 table.output,
@@ -195,3 +157,72 @@ td.outputdata {
     border-radius: 10px;
     color: red;
 }
+
+.error {
+    color: red;
+    font-size: 16px;
+    font-family: "optima", sans-serif;
+    font-weight: bold;
+}
+
+.pwd-message {
+    text-align: right;
+    font-family: "optima", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+p {
+    text-align: center;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+.td1 {
+    text-align: right;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+th {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+label {
+    text-align: right;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+input {
+    text-align: left;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+textarea {
+    text-align: left;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+#today {
+    text-align: left;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+
