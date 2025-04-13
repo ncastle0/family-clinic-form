@@ -1,0 +1,197 @@
+/*
+Name: Yaneli Castillo
+Date Created: April 8th, 2025
+Version: 3
+Description: Homework 3 - MIS 3371
+*/
+
+header {
+    width: 100%;
+    background-color: cornsilk;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    margin: 0;
+    height: 100%;
+    min-height: 100vh;
+}
+
+form {
+    flex-grow: 1;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+main {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    flex-grow: 1;
+}
+
+.image {
+    text-align: left;
+}
+
+.td1 {
+    text-align: right;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+th {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+footer {
+    position: center;
+    bottom: 0;
+    width: 100%;
+    background-color: bisque;
+    height: 2.0rem;
+}
+
+#footer {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+label {
+    text-align: right;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+input {
+    text-align: left;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+textarea {
+    text-align: left;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+#today {
+    text-align: left;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+p {
+    text-align: right;
+    font-family: "optima", sans-serif;
+    font-weight: normal;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    font-family: "optima", sans-serif;
+    font-weight: bold;
+}
+
+.pwd-message {
+    text-align: right;
+    font-family: "optima", sans-serif;
+    font-weight: bold;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red;
+}
+
+#review {
+    margin-top: 5px;
+}
+
+table.output,
+tr.output,
+td.output {
+    width: 500px;
+    background-color: cornsilk;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: coral;
+}
+
+td.outputdata {
+    width: 500px;
+    background-color: cadetblue;
+    padding: 10px;
+    border-spacing: 2px;
+}
+
+#alert-box {
+    color: red;
+    font-size: 16px;
+    font-family: "optima", sans-serif;
+    font-weight: bold;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+}
+
+#alert-content {
+    background-color: cornsilk;
+    border-radius: 10px;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    margin-top: 8px;
+    padding: 8px;
+    text-align: center;
+}
+
+#alert-content h4 {
+    width: 100%;
+    background-color: crimson;
+}
+
+#close-alert {
+    background-color: cornflowerblue;
+    border-width: 1px;
+    border-style: solid;
+    color: red;
+    border-color: violet;
+    font-size: 8px;
+    font-weight: bold;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    font-family: "optima" sans-serif;
+}
+
+.pwd-message {
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: normal;
+    position: relative;
+    left: 10px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 10px;
+    border-radius: 10px;
+    color: red;
+}
