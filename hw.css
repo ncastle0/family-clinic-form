@@ -21,17 +21,7 @@ body {
 }
 
 form {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    flex-grow: 1;
 }
 
 h1, h2 {
